@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <p id="text">
+    This is the text
+  </p>
+
+
+  <script>
+    const txt = document.getElementById("text");
+
+    txt.addEventListener("mouseover",()=>{
+      txt.style.color = "red";
+    });
+
+    txt.addEventListener("mouseout",()=>{
+      txt.style.color = "black";
+    });
+
+    txt.addEventListener("dblclick",()=>{
+      txt.style.fontSize = "40px";
+    });
+  </script>
+</body>
+</html>

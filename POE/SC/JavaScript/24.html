@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <input type="number" id="marks" placeholder="Enter Marks">
+  <button onclick="showGrade()">Check Grade</button>
+
+  <p id="result"></p>
+
+  <script>
+
+    function showGrade() {
+
+      let marks = Number(document.getElementById("marks").value);
+      let grade = "";
+
+      if (marks >= 90) {
+        grade = "A";
+      }
+      else if (marks >= 75) {
+        grade = "B";
+      }
+      else if (marks >= 50) {
+        grade = "C";
+      }
+      else {
+        grade = "Fail";
+      }
+
+      document.getElementById("result").innerText =
+        "Grade: " + grade;
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input id="txt">
+  <p id="len"></p>
+
+  <script>
+    const txt = document.getElementById("txt");
+    const size = document.getElementById("len");
+
+    txt.addEventListener("input",()=>{
+      size.innerText = "Size : " + txt.value.length 
+    });
+
+  </script>
+</body>
+</html>

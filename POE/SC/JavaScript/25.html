@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <form onsubmit="return validateForm()">
+
+    <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+    <input type="password" id="password" placeholder="Enter Password"><br><br>
+
+    <input type="text" id="email" placeholder="Enter Email"><br><br>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+  <script>
+
+    function validateForm() {
+
+      let name = document.getElementById("name").value;
+      let password = document.getElementById("password").value;
+      let email = document.getElementById("email").value;
+
+      if (name === "") {
+        alert("Name should not be empty");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+      }
+
+      if(!email.includes("@")){
+        alert("Email is invalid");
+        return false;
+      }
+
+      alert("Form Submitted Successfully");
+      return true;
+    }
+
+  </script>
+
+</body>
+</html>

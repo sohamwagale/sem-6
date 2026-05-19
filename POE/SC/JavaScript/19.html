@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h2>Select a course</h2>
+
+  <select id="course" onchange="showValue()">
+    <option value="">--Select Course--</option>
+    <option value="js">Javascript</option>
+    <option value="ts">TypeScript</option>
+    <option value="dart">Dart</option>
+    <option value="php">PHP</option>
+  </select>
+
+  <p id="result"></p>
+
+  <script>
+
+    function showValue(){
+      const selectedValue = document.getElementById("course").value;
+
+      if(selectedValue != "") document.getElementById("result").innerText = "Selected Course : " + selectedValue
+      else document.getElementById("result").innerText = "";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <form onsubmit="return validate()">
+
+    <input 
+      type="text"
+      id="username"
+      placeholder="Enter Username"
+    >
+    <input 
+      type="password"
+      id="password"
+      placeholder="Enter password"
+    >
+
+    <button type="submit">Login</button>
+
+
+  </form>
+
+
+  <script>
+    function validate(){
+      const name = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if(name === "" || pass ===""){
+        alert("username and password cant be empty");
+        return false;
+      }
+
+      alert("Form submitted succesfully");
+      return true;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <p id="txt"></p>
+  <p id="txt2"></p>
+
+  <script>
+    const txt = document.getElementById("txt");
+    const txt2 = document.getElementById("txt2");
+
+    document.addEventListener("keydown",()=>{
+      txt.innerText = "Key Down";
+    })
+    document.addEventListener("keyup",()=>{
+      txt.innerText = "Key Up";
+    })
+    
+    document.addEventListener("keypress",()=>{
+      txt2.innerText = "Key press";
+    })
+    
+  </script>
+</body>
+</html>
