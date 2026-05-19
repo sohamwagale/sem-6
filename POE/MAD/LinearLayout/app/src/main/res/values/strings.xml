@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Linear Layout</string>
+    <string name="enter_your_details">Enter your details!</string>
+    <string name="submit">Submit</string>
+</resources>

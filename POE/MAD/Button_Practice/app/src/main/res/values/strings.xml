@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Button_Practice</string>
+    <string name="btnNext">Next Activity</string>
+    <string name="secondActivity">This is the next Activity</string>
+</resources>

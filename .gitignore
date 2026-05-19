@@ -1,2 +1,27 @@
-MAD/
-Mobile-Application-dev/
+# ===========================
+# Android Build Artifacts
+# ===========================
+
+# Build output directories (the main bloat ~20-30MB per project)
+**/build/
+
+# Gradle cache and wrapper downloads
+**/.gradle/
+
+# Local machine-specific SDK path (never share this)
+**/local.properties
+
+# IntelliJ/Android Studio module files
+**/*.iml
+
+# Android Studio captures (profiler data, etc.)
+**/captures/
+
+# Android Studio generated files
+**/.idea/assetWizardSettings.xml
+**/.idea/deploymentTargetSelector.xml
+**/.idea/deviceManager.xml
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db

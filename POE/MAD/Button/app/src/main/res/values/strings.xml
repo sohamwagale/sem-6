@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Button</string>
+    <string name="btnNext" translatable="false">Open Second Activity</string>
+    <string name="textView">The Second Activity</string>"
+</resources>
