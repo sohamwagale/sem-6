@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Email Validation</title>
+    <script>
+      function validateEmail() {
+        var email = document.getElementById("email").value;
+        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (email == "") {
+          alert("Email cannot be empty");
+          return false;
+        }
+
+        if (!email.match(pattern)) {
+          alert("Enter valid email (example: name@gmail.com)");
+          return false;
+        }
+
+        alert("Valid Email");
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return validateEmail();">
+      Enter Email:
+      <input type="text" id="email" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

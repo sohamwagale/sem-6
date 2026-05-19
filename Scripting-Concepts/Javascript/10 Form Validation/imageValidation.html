@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Image Validation</title>
+
+    <script>
+      function validateForm() {
+        var image = document.getElementById("image").value;
+        var result = document.getElementById("result");
+
+        if (image == "") {
+          result.innerHTML = "Please select an image";
+          result.style.color = "red";
+          return false;
+        }
+
+        var allowed = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+        if (!allowed.exec(image)) {
+          result.innerHTML = "Only image files allowed (jpg, jpeg, png, gif)";
+          result.style.color = "red";
+          return false;
+        }
+
+        result.innerHTML = "Image file is valid";
+        result.style.color = "green";
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Image Validation</h2>
+
+    <form onsubmit="return validateForm();">
+      Choose File:
+      <input type="file" id="image" /><br /><br />
+
+      <p id="result"></p>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

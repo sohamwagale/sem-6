@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Number Validation</title>
+    <script>
+      function validateNumber() {
+        var num = document.getElementById("number").value;
+
+        if (num == "") {
+          alert("Field cannot be empty");
+          return false;
+        }
+
+        if (isNaN(num)) {
+          alert("Only numbers allowed");
+          return false;
+        }
+
+        alert("Valid Number");
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return validateNumber();">
+      Enter Age:
+      <input type="text" id="number" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

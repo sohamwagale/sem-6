@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Close Warning</title>
+  </head>
+  <body>
+    <h2>Try closing, refreshing or pressing back button</h2>
+    <script>
+      window.addEventListener("beforeunload", function (event) {
+        event.preventDefault();
+        event.returnValue = "";
+      });
+    </script>
+  </body>
+</html>

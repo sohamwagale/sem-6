@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Electricity Bill using If</h1>
+    <script>
+        const unit = parseInt(prompt("Enter No. of Units Used: "))
+        if (unit > 0 && unit <= 100){
+            let bill = unit * 4.22;
+            document.write("Amount = ", Math.ceil(bill));
+        } else if (unit > 100){
+            const first_100 = 100 * 4.22;
+            const remaining = (unit - 100) * 5.02;
+            document.write("Amount for first 100: ", Math.ceil(first_100));
+            document.write("<br>");
+            document.write("Amount for remaining: ", Math.ceil(remaining));
+            document.write("<br>");
+            document.write("Amount for first 100: ", Math.ceil(first_100 + remaining));
+        } else {
+            document.write("Invalid Input")
+        }
+    </script>
+</body>
+</html>

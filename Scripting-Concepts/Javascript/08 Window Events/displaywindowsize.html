@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Window Resize</title>
+    <script>
+      window.onresize = function () {
+        document.getElementById("size").innerHTML =
+          "Width: " + window.innerWidth + " Height: " + window.innerHeight;
+      };
+    </script>
+  </head>
+  <body>
+    <h2>Resize the browser window</h2>
+    <p id="size"></p>
+  </body>
+</html>

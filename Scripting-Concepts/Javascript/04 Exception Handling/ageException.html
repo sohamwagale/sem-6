@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Exception</title>
+</head>
+<body>
+    <h2>Exception when age is less than 18</h2>
+    <script>
+        try {
+            let age = 21;
+            if(age <18){
+                throw "Age is less than 18";
+            }else{
+                document.write("You are eligible to VOTE")
+            }
+        } catch (error){
+            document.write("Error: " + error);
+        } finally{
+            document.write("<br>Program Executed Successfully.")
+        }
+    </script>
+</body>
+</html>

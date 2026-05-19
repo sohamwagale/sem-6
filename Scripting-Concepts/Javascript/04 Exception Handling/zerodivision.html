@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Exception Handling</h2>
+    <script>
+        let a = parseInt(prompt("Enter No 1: "));
+        let b = parseInt(prompt("Enter No 2: "));
+        try{
+            if (b === 0) {
+                throw "Division by zero";
+            }
+            let result = a / b;
+            document.write("Result: " + result);
+        } catch(error){
+            document.write("Error Found: " + error);
+        } finally{
+            document.write("<br>Program Executed Successfully");
+        }
+    </script>
+
+</body>
+</html>

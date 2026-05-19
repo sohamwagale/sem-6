@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Characters</title>
+</head>
+<body>
+    <h3>Enter Text: </h3>
+
+    <input type="text" onkeyup="countChar()">
+    <p id="count"></p>
+
+    <script>
+    function countChar() {
+        let text = event.target.value;
+        document.getElementById("count").innerHTML = "No. of Characters typed: " + text.length;
+    }
+    </script>
+</body>
+</html>

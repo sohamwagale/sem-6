@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Electricity Bill using If</h1>
+    <script>
+        const unit = parseInt(prompt("Enter No. of Units Used: "))
+        if (unit > 0){
+            let bill = unit * 4.22;
+            document.write("Amount = ", Math.ceil(bill));
+        }
+    </script>
+</body>
+</html>

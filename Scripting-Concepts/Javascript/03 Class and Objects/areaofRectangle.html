@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Area of Rectangle: </h2>
+    <p id = "output"></p>
+
+    <script>
+        // class
+        class ReactangleArea{
+            constructor(length, breadth){
+                this.length = length;
+                this.breadth = breadth;
+            }
+
+            calArea(){
+                this.area = this.length * this.breadth;
+            }
+
+            display(){
+                document.getElementById("output").innerHTML = 
+                    "Length: " + this.length + "<br>" +
+                    "Breadth: " + this.breadth + "<br>" +
+                    "Area:  " + this.area;
+            }
+        }
+
+        let len = prompt("Enter Length: ");
+        let bre = prompt("Enter Breadth: ");
+
+        // object
+        let rec = new ReactangleArea(len, bre);
+        rec.calArea();
+        rec.display();
+    </script>
+</body>
+</html>

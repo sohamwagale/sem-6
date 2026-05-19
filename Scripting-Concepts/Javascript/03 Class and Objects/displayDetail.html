@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Student {
+        constructor(name, rollNo, course, marks) {
+            this.name = name;
+            this.rollNo = rollNo;
+            this.course = course;
+            this.marks = marks;
+        }
+
+        displayDetails() {
+            document.write("<h3>Student Details</h3>");
+            document.write("Name: " + this.name + "<br>");
+            document.write("Roll No: " + this.rollNo + "<br>");
+            document.write("Course: " + this.course + "<br>");
+            document.write("Marks: " + this.marks + "<br>");
+        }
+    }
+
+    let name = prompt("Enter Student Name:");
+    let rollNo = prompt("Enter Roll Number:");
+    let course = prompt("Enter Course:");
+    let marks = prompt("Enter Marks:");
+
+    let student1 = new Student(name, rollNo, course, marks);
+
+    student1.displayDetails();
+</script>
+</body>
+</html>

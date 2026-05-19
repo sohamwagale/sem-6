@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Bank Account Details</h2>
+    <p id = "output"></p>
+
+    <script>
+        // class
+        class BankAccount{
+            constructor(name, accNo, balance){
+                this.name = name;
+                this.accNo = accNo;
+                this.balance = balance;
+            }
+
+            deposit(amount){
+                this.balance = this.balance + amount;
+            }
+
+            withdraw(amount){
+                this.balance = this.balance - amount;
+            }
+
+            display(){
+                document.getElementById("output").innerHTML = 
+                    "Account Holder Name: " + this.name + "<br>" +
+                    "Account Number: " + this.accNo + "<br>" +
+                    "Balance: Rs. " + this.balance;
+            }
+        }
+
+        // object
+        let account = new BankAccount("Shubham Pattewar", 562341, 5000)
+        account.deposit(3000);
+        account.withdraw(4000);
+        account.display();
+    </script>
+</body>
+</html>
