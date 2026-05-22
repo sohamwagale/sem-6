@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <!-- Background Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Frame Layout Example"
+        android:textSize="24sp"
+        android:layout_gravity="center" />
+
+    <!-- Button placed over TextView -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="100dp" />
+
+</FrameLayout>
